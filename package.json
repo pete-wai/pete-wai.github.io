@@ -1,0 +1,22 @@
+{
+  "name": "pwai-catalog",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "24.21.0",
+    "npm": "11.19.0"
+  },
+  "packageManager": "npm@11.19.0",
+  "scripts": {
+    "discover": "node scripts/discover.mjs",
+    "images": "node scripts/images.mjs",
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "node --test",
+    "preview": "node scripts/serve.mjs"
+  },
+  "devDependencies": {
+    "lighthouse": "13.6.0",
+    "sharp": "0.35.5"
+  }
+}

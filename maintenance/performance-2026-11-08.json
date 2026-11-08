@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-08",
+  "tool": "Lighthouse 13.6.0",
+  "url": "http://127.0.0.1:4173/",
+  "formFactor": "mobile",
+  "throttlingMethod": "simulate",
+  "performance": 1,
+  "accessibility": 1,
+  "largestContentfulPaintMs": 1426.5279999999998,
+  "cumulativeLayoutShift": 0,
+  "totalTransferBytes": 230250,
+  "labelContentNameMatch": 1,
+  "limitations": [
+    "Emulated mobile and browser checks, not physical-device testing.",
+    "Local preview uses no-store headers; production caching differs."
+  ]
+}

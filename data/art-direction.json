@@ -1,0 +1,25 @@
+{
+  "shared": "Use case: illustration-story. Create a sophisticated editorial illustration for a personal research project catalog. Wide landscape 3:2 composition, handmade cut-paper collage with subtle risograph grain, crisp sculptural shapes, warm ivory paper, deep charcoal ink, muted earthy accent colors. Restrained, thoughtful magazine art, generous negative space, no gradients or glossy 3D. No words, letters, numbers, logos, seals, flags, watermarks, or interface mockups. Central subject readable at thumbnail size. Keep lower-right area simple for a separately overlaid real website screenshot. Subject: ",
+  "subjects": {
+    "pdftoweb": "An open cream book whose pages unfold into a calm reading window, forest green and ochre paper shapes.",
+    "zensical-examples": "A playful arranged collection of modular interface building blocks, tabs, and panels like architectural paper samples; cobalt blue and pale lilac accents.",
+    "change": "An abstract timeline of computing security: a small vintage computer, connected nodes, and evolving layered protective shapes; burnt orange and ink black.",
+    "rfi": "A fan of collected paper responses converging into an organized set of eight folders, coral and muted teal, an inviting research desk.",
+    "fr-vdr": "A structured checklist and a magnifying lens over layered paper cards, sage green and warm yellow, thoughtful examination rather than a certification badge.",
+    "marketplace-smb": "A collection of small architectural storefront blocks of different sizes alongside a flowing chart ribbon, muted blue and terracotta, no literal numeric chart.",
+    "fedramp-a130": "A carefully arranged archive of policy books, paper documents and a branching historical timeline, aubergine and golden ochre.",
+    "fedramp-design-concepts": "An experimental architectural model of open doorways and interconnected public spaces made of cut paper, purple and warm orange, inviting civic design without official symbols."
+  },
+  "mode": "built-in image_gen",
+  "references": [],
+  "aspectRatio": "3:2",
+  "palette": [
+    "ivory",
+    "charcoal",
+    "ochre",
+    "terracotta",
+    "sage",
+    "cobalt",
+    "aubergine"
+  ]
+}

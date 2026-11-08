@@ -1,16 +1,23 @@
-## Hi there 👋
+# pwai.dev
 
-<!--
-**pete-wai/pete-wai** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+[Open the project catalog](https://pwai.dev/).
 
-Here are some ideas to get you started:
+A static gallery of Pete Wai's AI-generated personal research sites, experiments, and prototypes. Catalog refreshes are manual. GitHub Pages publishes the committed root from `main`.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Start with [AGENTS.md](AGENTS.md) for the complete workflow, discovery rules, screenshot recipe, illustration prompts, and release checks.
+
+```sh
+mise trust
+mise install
+mise exec -- npm ci
+mise exec -- npm run discover
+mise exec -- npm run images
+mise exec -- npm run build
+mise exec -- npm run check -- --discovery
+mise exec -- npm test
+mise exec -- npm run preview
+```
+
+Preview: http://127.0.0.1:4173. No runtime JavaScript or external services are required to read the catalog. `discover` reads GitHub and writes an ignored report; it never edits catalog entries automatically.
+
+Authored metadata: `data/catalog.json`. Original artwork and captures: `sources/`. Shared art direction and exact generation prompts: `data/art-direction.json`. Optimized public images: `assets/images/`. Deployment and QA records: `maintenance/`.
