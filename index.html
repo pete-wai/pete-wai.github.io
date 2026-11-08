@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hello world from Pete Wai.">
+    <title>Hello world | Pete Wai</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        font-family: system-ui, sans-serif;
+        background: #f7f5f0;
+        color: #202820;
+      }
+      body {
+        min-height: 100svh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+      }
+      main { padding: 2rem; }
+      .domain { color: #52664f; font-size: 0.875rem; }
+      h1 {
+        margin: 1rem 0;
+        font-size: clamp(3rem, 10vw, 6rem);
+        letter-spacing: -0.06em;
+        line-height: 1.1;
+      }
+      p { line-height: 1.6; }
+      @media (prefers-color-scheme: dark) {
+        :root { background: #172019; color: #f7f5f0; }
+        .domain { color: #b1c6a9; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="domain">pwai.dev</p>
+      <h1>Hello world.</h1>
+      <p>I'm Pete Wai. Welcome to my little corner of the web.</p>
+    </main>
+  </body>
+</html>
