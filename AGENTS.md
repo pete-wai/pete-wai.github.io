@@ -6,6 +6,8 @@ This repository is `pete-wai/pete-wai.github.io`, published at https://pwai.dev/
 
 Catalog maintenance authorizes changes to this repository only, including its normal Pages publication when requested. Do not edit sibling projects, change their hosting, register services, create schedules, change DNS, or add cross-repository credentials/triggers. Do not publish private repositories, source data, or unreviewed metadata. No subagents are required.
 
+When publishing a new eligible project site to pwai.dev, include its reviewed catalog entry and verify the link on the live homepage as the final publication step. The owner has requested this for future publications. Follow the addition procedure below unless the owner expressly excludes a project.
+
 Keep the site static, fast, readable without JavaScript, and usable on phones. Preserve chronological reading order and existing project URLs. One entry per published project site; never add this catalog itself. No analytics, third-party embeds, external fonts, client-side API calls, pagination, carousels, or hover-only information.
 
 ## Files and ownership

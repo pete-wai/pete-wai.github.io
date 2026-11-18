@@ -8,14 +8,18 @@ for(const repo of paged('users/pete-wai/repos')) {
  if(!repo.has_pages || repo.name==='pete-wai.github.io')continue;
  try {
   const pages=api(`repos/${repo.full_name}/pages`);
-  if(new URL(pages.html_url).origin!=='https://pwai.dev') {issues.push(`${repo.full_name}: Pages uses another domain`);continue;}
+  const url = new URL(pages.html_url);
+  // Pages can advertise HTTP for project sites that inherit the owner's domain.
+  if (url.origin === 'http://pwai.dev') url.protocol = 'https:';
+  if(url.origin!=='https://pwai.dev') {issues.push(`${repo.full_name}: Pages uses another domain`);continue;}
   const deployments=paged(`repos/${repo.full_name}/deployments?environment=github-pages`);
   const candidates=[];
   for(const d of deployments){const statuses=paged(`repos/${repo.full_name}/deployments/${d.id}/statuses`);const success=successfulPublication(d,statuses);if(success)candidates.push({...success,evidenceUrl:`https://api.github.com/repos/${repo.full_name}/deployments/${d.id}/statuses`});}
   candidates.sort((a,b)=>b.publishedAt.localeCompare(a.publishedAt));
   if(!candidates.length)throw Error('No successful Pages deployment found');
-  const response=await fetch(pages.html_url);if(!response.ok)throw Error(`Live site returned ${response.status}`);
-  projects.push({repositoryId:repo.id,repository:repo.full_name,slug:repo.name,url:pages.html_url,...candidates[0]});
+  const response=await fetch(url);if(!response.ok)throw Error(`Live site returned ${response.status}`);
+  if (new URL(response.url).origin !== url.origin) throw Error('Live page redirects off-domain');
+  projects.push({repositoryId:repo.id,repository:repo.full_name,slug:repo.name,url:url.href,...candidates[0]});
  }catch(e){issues.push(`${repo.full_name}: ${e.message}`);}
 }
 projects.sort((a,b)=>a.slug.localeCompare(b.slug));

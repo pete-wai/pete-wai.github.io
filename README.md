@@ -2,7 +2,7 @@
 
 [Open the project catalog](https://pwai.dev/).
 
-A static gallery of Pete Wai's AI-generated personal research sites, experiments, and prototypes. Catalog refreshes are manual. GitHub Pages publishes the committed root from `main`.
+A static gallery of Pete Wai's AI-generated personal research sites, experiments, and prototypes. Each new public pwai.dev project gets a reviewed homepage entry as part of publication. Catalog refreshes are manual. GitHub Pages publishes the committed root from `main`.
 
 Start with [AGENTS.md](AGENTS.md) for the complete workflow, discovery rules, screenshot recipe, illustration prompts, and release checks.
 
